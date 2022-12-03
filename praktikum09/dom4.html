@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 9.4</title>
+</head>
+<body>
+<form>
+    <input id="num1" type="number" onchange="penjumlahan()" />
+    <br>+<br>
+    <input id="num2" type="number" onchange="penjumlahan()" />
+    <br>=<br>
+    <div id="hasil"> </div>
+</form>
+
+<script>
+    function penjumlahan() {
+      var num1 = document.getElementById("num1").value;
+      var num2 = document.getElementById("num2").value;
+  
+      var hasilPerkalian = parseInt(num1) + parseInt(num2); 
+  
+      var result = document.getElementById("hasil"); 
+      result.innerHTML = hasilPerkalian ; 
+    }
+  </script>
+  
+</body>
+</html>
